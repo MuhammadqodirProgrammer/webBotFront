@@ -46,7 +46,7 @@ useEffect(()=>{
         tg.MainButton.show()
 
     }
-    },[country ,city])
+    },[country ,city ,subject])
 	const onChangeCountry = (e) => {
 		e.preventDefault();
 		setCountry(e.target.value);
