@@ -48,15 +48,12 @@ useEffect(()=>{
     }
     },[country ,city ,subject])
 	const onChangeCountry = (e) => {
-		e.preventDefault();
 		setCountry(e.target.value);
 	};
     const onChangeCity = (e) => {
-		e.preventDefault();
 		setCity(e.target.value);
 	};
     const onChangeSubject= (e) => {
-		e.preventDefault();
 		setSubject(e.target.value);
 	};
 	return (
