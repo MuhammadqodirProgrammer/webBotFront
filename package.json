@@ -8,9 +8,9 @@
     "build": "vite build",
     "lint": "eslint . --ext js,jsx --report-unused-disable-directives --max-warnings 0",
     "preview": "vite preview",
-    "command" : "npm run build",
-    "publish":"../dist",
-    "base" : "/"
+    "command ": "npm run build",
+    "publish":"path-to-react-app/build",
+    "base ": "path-to-react-app"
   },
   "dependencies": {
     "react": "^18.2.0",
