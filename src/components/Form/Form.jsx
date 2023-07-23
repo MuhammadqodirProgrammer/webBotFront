@@ -16,6 +16,7 @@ const onSendData =useCallback(
             city,
             subject
         }
+        console.log(data);
 
         tg.sendData(JSON.stringify(data))
     },
@@ -26,10 +27,11 @@ useEffect(()=>{
     tg.onEvent("mainButtonClicked" ,onSendData)
 
 return ()=>{
-    tg.offEvnet("mainButtonClicked" ,onSendData)
-
+    // tg.offEvnet("mainButtonClicked" ,onSendData)
+    window.Telegram?.WebApp?.offEvent('mainButtonClicked', onSendData)
 }
 },[])
+
     useEffect(()=>{
 tg.MainButton.setParams({
     text:"Malumotlarni yuborish"
