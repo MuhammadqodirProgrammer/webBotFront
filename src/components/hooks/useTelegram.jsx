@@ -16,6 +16,6 @@ if(tg.MainButton.isVisible){
         onToggle,
 		onClose,
 		tg,
-		user: tg.initDataUnsafe?.user?.username,
+		user: tg.initDataUnsafe?.user,
 	};
 }
