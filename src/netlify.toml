@@ -2,5 +2,7 @@
 from="/*"
 to="/index.html"
 status=200
- force = true
-  headers = {X-From = "Netlify"}
+[build]
+  command = "npm run build"
+  publish="https://webbotfront.netlify.app/dist"
+  base = "https://webbotfront.netlify.app"
