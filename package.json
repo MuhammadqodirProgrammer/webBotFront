@@ -9,13 +9,14 @@
     "lint": "eslint . --ext js,jsx --report-unused-disable-directives --max-warnings 0",
     "preview": "vite preview",
     "command ": "npm run build",
-    "publish":"path-to-react-app/build",
+    "publish": "path-to-react-app/build",
     "base ": "path-to-react-app"
   },
   "dependencies": {
     "react": "^18.2.0",
     "react-dom": "^18.2.0",
-    "react-router-dom": "^6.3.0"
+    "react-router-dom": "^6.3.0",
+    "toml": "^3.0.0"
   },
   "devDependencies": {
     "@types/react": "^18.2.15",
