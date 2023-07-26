@@ -16,11 +16,11 @@ function App() {
 		<>
 			<div>
 				<Header />
-<Routes>
-  <Route index path='/' element={<ProductList/>}  />
-  <Route index path='/form' element={<Form/>}  />
-</Routes>
-<Outlet/>
+				<Routes>
+					<Route index path='/' element={<ProductList />} />
+					<Route index path='/form' element={<Form />} />
+				</Routes>
+				<Outlet />
 			</div>
 		</>
 	);
