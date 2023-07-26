@@ -20,15 +20,15 @@ const onSendData =useCallback(
 
         tg.sendData(JSON.stringify(data))
     },
-    [],
+    [country,city,subject],
 );
 
 useEffect(()=>{
     tg.onEvent("mainButtonClicked" ,onSendData)
 
 return ()=>{
-    // tg.offEvnet("mainButtonClicked" ,onSendData)
-    window.Telegram?.WebApp?.offEvent('mainButtonClicked', onSendData)
+    tg.offEvnet("mainButtonClicked" ,onSendData)
+    // window.Telegram?.WebApp?.offEvent('mainButtonClicked', onSendData)
 }
 },[])
 
